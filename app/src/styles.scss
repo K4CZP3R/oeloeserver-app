@@ -1,0 +1,14 @@
+@import "./app/core/themes/k4czp3r.scss";
+
+html,
+body {
+  box-sizing: border-box;
+  max-width: 1072px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: beige;
+}
