@@ -9,6 +9,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { PlayersCardComponent } from './components/players-card/players-card.component';
 import { StatsCardComponent } from './components/stats-card/stats-card.component';
 import { MapCardComponent } from './components/map-card/map-card.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MapCardComponent } from './components/map-card/map-card.component';
     PlayersCardComponent,
     StatsCardComponent,
     MapCardComponent,
+    MapComponent,
   ],
   imports: [CommonModule, SharedModule, LandingRoutingModule, MatBadgeModule],
 })

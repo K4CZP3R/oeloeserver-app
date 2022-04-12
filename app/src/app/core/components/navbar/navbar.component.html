@@ -1,9 +1,16 @@
 <p>
-  <mat-toolbar @fadeInAnimation class="bg-color">
-    <button [routerLink]="['/']" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <mat-toolbar @fadeFromDownAnimation class="bg-color">
+    <button [disabled]="currentUrl === ('/')" [routerLink]="['/']" mat-icon-button class="example-icon"
+      aria-label="Example icon-button with menu icon">
       <mat-icon>home</mat-icon>
-      <!-- <fa-icon [icon]="faCoffee"></fa-icon> -->
+
     </button>
-    <span>applicationName</span>
+    <button [disabled]="currentUrl.startsWith('/map')" [routerLink]="['/map']" mat-icon-button class="example-icon"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon>layers</mat-icon>
+    </button>
+    <!-- <span>applicationName</span> -->
+    <!-- <span>{{currentUrl}}</span> -->
+
   </mat-toolbar>
 </p>
