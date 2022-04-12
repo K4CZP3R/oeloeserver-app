@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeInAnimation } from '../../animations/fade-in.animation';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +9,6 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent implements OnInit {
   constructor() {}
-  faCoffee = faCoffee;
 
   ngOnInit(): void {}
 }

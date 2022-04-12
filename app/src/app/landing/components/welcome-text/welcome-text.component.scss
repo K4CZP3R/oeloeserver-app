@@ -1,8 +1,7 @@
 .containers {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  padding: 1%;
+  gap: 10rem;
 }
 
 .container {
@@ -10,7 +9,9 @@
   // height: 25vh;
   // border: 1px solid #ccc;
   background-color: white;
-  opacity: 90%;
+  // background-image: url("http://localhost:8000/oak.webp");
+  // color: white;
+  // opacity:
   padding: 16px;
   border-radius: 15px;
 
@@ -23,12 +24,10 @@
 }
 
 .container-text {
-  width: 25%;
+  width: 35%;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .container-1 {
     flex-direction: column;
   }

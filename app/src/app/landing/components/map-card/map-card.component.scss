@@ -1,18 +1,19 @@
 .containers {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  padding: 1%;
+  gap: 10rem;
 }
 
 .container {
   display: flex;
   // height: 25vh;
   // border: 1px solid #ccc;
+  flex-direction: column;
   background-color: white;
   opacity: 90%;
-  padding: 16px;
+  // padding: 16px;
   border-radius: 15px;
+  overflow: hidden;
 
 }
 .container-1 {
@@ -26,9 +27,7 @@
   width: 25%;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .container-1 {
     flex-direction: column;
   }

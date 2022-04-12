@@ -1,0 +1,74 @@
+.containers {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  // height: 25vh;
+  // border: 1px solid #ccc;
+  background-color: white;
+  opacity: 90%;
+  padding: 16px;
+  border-radius: 15px;
+
+}
+.container-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-text {
+  width: 25%;
+}
+
+.players {
+  display: flex;
+  gap: 5px;
+  overflow-y: auto;
+}
+
+.player {
+  background-color: whitesmoke;
+  padding: 1%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-text {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.indicator.offline {
+  background: red;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+.indicator.online {
+  background: #28B62C;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .container-1 {
+    flex-direction: column;
+  }
+  .container-text {
+    width: 100%;
+  }
+}
