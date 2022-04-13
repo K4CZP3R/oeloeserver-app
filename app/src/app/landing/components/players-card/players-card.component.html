@@ -1,13 +1,22 @@
 <div class="container">
-  <h1>Spelers</h1>
+  <h1 style="color: white">Spelers</h1>
   <div class="players">
 
-    <div class="player" *ngFor="let a of [1,2,3,4,5,6,7,8,9]">
-      <img src="https://crafatar.com/renders/head/2d7ead4d-b47a-4602-b660-e119d691adaa" />
+    <div class="player" *ngFor="let player of playersStats">
+      <img src="https://crafatar.com/renders/head/{{player.playerId}}" />
       <div class="player-text">
-        <span class="indicator offline"></span>
-        <p>Player {{a}}</p>
+        <span [ngClass]="['indicator', player.currentState.isOnline ? 'online' : 'offline' ]"></span>
+        <p>{{player.playerName}}</p>
       </div>
+      <p *ngIf="player.currentState.isOnline; else offline">
+        Became online {{getTime(player.currentState.since * 1000) | relativeTime}}
+      </p>
+      <ng-template #offline>
+        Online {{getTime(player.currentState.since * 1000) | relativeTime}} ({{getTime((player.lastState?.for ?? 0) *
+        1000)
+        |
+        readableTime}})
+      </ng-template>
     </div>
 
   </div>
