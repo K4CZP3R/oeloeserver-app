@@ -4,14 +4,15 @@
 
     <div class="server-text">
       <h1>Minecraft Server</h1>
-      <p>Oeloeleoeloe</p>
-      <p>Spelers online: </p>
+      <div [innerHtml]="serverStatus?.motd?.html"></div>
+      <p>{{serverStatus?.version?.name}}</p>
+      <p>{{serverStatus?.roundTripLatency}}ms</p>
     </div>
   </div>
 
 
   <div class="right-side">
-    0/10 players
+    {{serverStatus?.players?.online}}/{{serverStatus?.players?.max}} players
   </div>
 
 </div>
