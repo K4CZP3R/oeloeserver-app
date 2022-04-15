@@ -12,3 +12,35 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-image: url('assets/new_bg.png');
 }
+
+
+
+.skeleton {
+  // animation: fadein 2s;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.skeleton:empty {
+  width: 300px;
+  height: 1rem;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton:empty.px-50 {
+  width: 10px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(0, 0%, 76%);
+  }
+100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}

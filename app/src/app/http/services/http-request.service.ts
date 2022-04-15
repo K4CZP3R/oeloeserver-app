@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { first, lastValueFrom } from 'rxjs';
+import { HttpModule } from '../http.module';
 
 @Injectable({
-  providedIn: 'any',
+  providedIn: HttpModule,
 })
 export class HttpRequestService {
   constructor(private http: HttpClient) {}

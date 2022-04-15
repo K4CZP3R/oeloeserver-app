@@ -24,3 +24,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.skeleton:empty.servericon {
+  width: 128px;
+  height: 128px;
+}

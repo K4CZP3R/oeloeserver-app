@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { OeloeserverService } from './oeloeserver.service';
+import { WsOeloeserverService } from './ws-oeloeserver.service';
 
-describe('OeloeserverService', () => {
-  let service: OeloeserverService;
+describe('WsOeloeserverService', () => {
+  let service: WsOeloeserverService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(OeloeserverService);
+    service = TestBed.inject(WsOeloeserverService);
   });
 
   it('should be created', () => {

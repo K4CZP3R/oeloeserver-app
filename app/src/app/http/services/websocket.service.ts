@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
+import { HttpModule } from '../http.module';
 
 @Injectable({
-  providedIn: 'any',
+  providedIn: HttpModule,
 })
 export class WebsocketService {
   public mySocket?: WebSocketSubject<any>;

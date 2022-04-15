@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { OeloeserverWsService } from './oeloeserver-ws.service';
+import { ServerStatusService } from './server-status.service';
 
-describe('OeloeserverWsService', () => {
-  let service: OeloeserverWsService;
+describe('ServerStatusService', () => {
+  let service: ServerStatusService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(OeloeserverWsService);
+    service = TestBed.inject(ServerStatusService);
   });
 
   it('should be created', () => {

@@ -74,3 +74,9 @@
     width: 100%;
   }
 }
+
+
+.skeleton:empty.sk-card {
+  height: 220px;
+  width: 180px;
+}

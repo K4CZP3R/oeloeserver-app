@@ -10,6 +10,7 @@ import { PlayersCardComponent } from './components/players-card/players-card.com
 import { StatsCardComponent } from './components/stats-card/stats-card.component';
 import { MapCardComponent } from './components/map-card/map-card.component';
 import { MapComponent } from './components/map/map.component';
+import { TranslateModule } from '../translate/translate.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,12 @@ import { MapComponent } from './components/map/map.component';
     MapCardComponent,
     MapComponent,
   ],
-  imports: [CommonModule, SharedModule, LandingRoutingModule, MatBadgeModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    TranslateModule,
+    LandingRoutingModule,
+    MatBadgeModule,
+  ],
 })
 export class LandingModule {}
