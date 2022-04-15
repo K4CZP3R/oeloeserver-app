@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  oeloeserver_ws: 'ws://localhost:8080',
+  oeloeserver_rest: 'http://localhost:1337',
+  application_name: '',
+  mc_server_addr: 'mc.hypixel.net:25565',
 };
 
 /*
