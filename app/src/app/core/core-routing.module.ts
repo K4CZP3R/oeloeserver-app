@@ -9,6 +9,11 @@ const routes: Routes = [
       import('../landing/landing.module').then((m) => m.LandingModule),
   },
   {
+    path: 'stats',
+    loadChildren: () =>
+      import('../statistics/statistics.module').then((m) => m.StatisticsModule),
+  },
+  {
     path: '**',
     component: NotFoundComponent,
   },

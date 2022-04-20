@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-image: url("/assets/oak.webp");
+  color: white;
+  opacity: 90%;
+  padding: 16px;
+  border-radius: 15px;
+  gap: 5%;
+  align-items: center;
+
+}
+
+.indicator.offline {
+  background: red;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+.indicator.online {
+  background: #28B62C;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+
+.mc-body {
+  width: 120px;
+  height: 270px;
+}

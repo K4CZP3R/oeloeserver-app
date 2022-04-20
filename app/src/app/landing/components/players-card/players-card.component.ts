@@ -12,6 +12,7 @@ import { fadeInAnimation } from 'src/app/core/animations/fade-in.animation';
 import { PlayerState } from 'src/app/shared/models/player-state.interface';
 import { OeloeserverStateService } from 'src/app/shared/services/oeloeserver-state.service';
 import { PlayerStatusService } from 'src/app/shared/services/player-status.service';
+import { getTime } from 'src/app/shared/helpers/time.helper';
 
 @Component({
   selector: 'app-players-card',
@@ -45,6 +46,6 @@ export class PlayersCardComponent implements OnInit {
   }
 
   getTime(unix: number) {
-    return new Date(unix);
+    return getTime(unix);
   }
 }

@@ -1,0 +1,38 @@
+.containers {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 1%;
+}
+
+.container {
+  display: flex;
+  // height: 25vh;
+  // border: 1px solid #ccc;
+  background-color: white;
+  opacity: 90%;
+  padding: 16px;
+  border-radius: 15px;
+
+}
+.container-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-text {
+  width: 25%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container-1 {
+    flex-direction: column;
+  }
+  .container-text {
+    width: 100%;
+  }
+}

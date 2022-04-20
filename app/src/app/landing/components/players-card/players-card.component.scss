@@ -41,8 +41,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.3s;
   // gap: 10px;
+  &:hover {
+    transform: scale(0.9);
+  }
+  &:active {
+    opacity: 0.5;
+  }
 }
+
 
 .player-text {
   display: flex;

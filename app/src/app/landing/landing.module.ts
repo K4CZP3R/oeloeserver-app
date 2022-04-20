@@ -7,7 +7,7 @@ import { WelcomeTextComponent } from './components/welcome-text/welcome-text.com
 import { ServerCardComponent } from './components/server-card/server-card.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { PlayersCardComponent } from './components/players-card/players-card.component';
-import { StatsCardComponent } from './components/stats-card/stats-card.component';
+import { StatsCardComponent } from '../statistics/components/stats-card/stats-card.component';
 import { MapCardComponent } from './components/map-card/map-card.component';
 import { MapComponent } from './components/map/map.component';
 import { TranslateModule } from '../translate/translate.module';
@@ -18,7 +18,6 @@ import { TranslateModule } from '../translate/translate.module';
     WelcomeTextComponent,
     ServerCardComponent,
     PlayersCardComponent,
-    StatsCardComponent,
     MapCardComponent,
     MapComponent,
   ],

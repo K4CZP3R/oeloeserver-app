@@ -1,8 +1,7 @@
 <div class="container">
   <h1 style="color: white">{{ "PLAYERS" | i18next }}</h1>
   <div class="players">
-    <div class="player" *ngFor="let player of playersStats">
-      <script src="https://gist.github.com/K4CZP3R/ecf6389bd995518db81cfa41817baebe.js"></script>
+    <div [routerLink]="['stats',player.playerId]" class="player" *ngFor="let player of playersStats">
 
       <img src="https://crafatar.com/renders/head/{{player.playerId}}" />
       <div class="player-text">
@@ -20,10 +19,5 @@
         readableTime}})
       </ng-template>
     </div>
-
-
-
-
   </div>
-
 </div>

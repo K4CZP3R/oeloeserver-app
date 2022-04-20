@@ -1,0 +1,18 @@
+<div class="container">
+  <div>
+    <img class="mc-body" src="https://crafatar.com/renders/body/{{playerId}}" />
+  </div>
+  <div>
+    <h1>{{playerState?.playerName}}</h1>
+    <p *ngIf="playerState?.currentState?.isOnline; else offline">
+      {{'BECAME_ONLINE' | i18next}} {{getTime(playerState?.currentState!.since * 1000) | relativeTime}}
+    </p>
+    <ng-template #offline>
+      {{'ONLINE' | i18next}} {{getTime(playerState?.currentState!.since * 1000) | relativeTime}}
+      ({{getTime((playerState?.lastState?.for ?? 0) *
+      1000)
+      |
+      readableTime}})
+    </ng-template>
+  </div>
+</div>
