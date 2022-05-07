@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
-  oeloeserver_ws: 'ws://localhost:8080',
-  oeloeserver_rest: 'http://localhost:1337',
-  application_name: '',
-  mc_server_addr: 'mc.hypixel.net:25565',
+  oeloeserver_ws: 'wss://wsapi.mc.k4czp3r.xyz',
+  oeloeserver_rest: 'https://api.mc.k4czp3r.xyz',
+  application_name: 'Oeloes',
+  mc_server_addr: 'mc.k4czp3r.xyz:25266',
 };
